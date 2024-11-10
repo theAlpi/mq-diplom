@@ -13,10 +13,12 @@
     <div class="wrap">
       <div class="logo">
         <a href="#0">
-          <img src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" alt="NOÉMI Logo">
+          <picture>
+            <img src="svg/noemi-logo.svg" alt="NOÉMI Logo">
+          </picture>
         </a>
       </div>
-      <div class="nav">
+     <div class="nav">
         <ul>
           <li><a href="#0">Главная</a></li>
           <li><a href="#0">Посты</a></li>
@@ -25,17 +27,20 @@
           <li><a href="#0">Темы</a></li>
           <li><a href="#0">Контакты</a></li>
         </ul>
-      </div>
+       </div>
       <h1 class="tagline">блог о творчестве, спорте, и образе жизни</h1>
     </div>
+
+    <div class="burger_menu">
+      <span></span>
+    </div>
+    
   </div>
   <a href="#0">
     <h2 class="now-trends">Сейчас в тренде</h2>
   </a>
   <div class="trends">
-    <div class="post-trend">
-      <div class="image-trend">
-            <img src="images/trend1.jpg" class="foto-trend" alt="сад на подоконнике">
+    <div class="post-trend garden">      
              <div class="box-trend">
                <div class="tegs-trnd">
                <ul>
@@ -46,27 +51,21 @@
                  <a href="#0">
                   <h2>Сейчас в тренде: сад на подоконнике</h2>
                 </a>
-          </div> 
-      </div>
-    </div> 
-    <div class="post-trend">
-      <div class="image-trend">
-            <img src="images/trend2.jpg" class="foto-trend" alt="сыры на красивых картинках">
-            <div class="box-trend">
+          </div>       
+       </div> 
+    <div class="post-trend cheeses">      
+          <div class="box-trend">
              <div class="tegs-trnd">
               <ul>
               <li><a href="#0">Food</a></li>
               </ul>
-          </div>
+             </div>
             <a href="#0">
              <h2>сыры на красивых картинках из интернета: какие они на вкус?</h2>
             </a>
-         </div>   
-       </div>
+         </div>
     </div>
-    <div class="post-trend">
-      <div class="image-trend">
-        <img src="images/trend3.jpg" class="foto-trend" alt="первый поход">
+    <div class="post-trend hike">      
          <div class="box-trend">
           <div class="tegs-trnd">
             <ul>
@@ -75,14 +74,11 @@
             </ul>
             </div>
             <a href="#0">
-            <h2>СОБИРАЕМСЯ В ПЕРВЫЙПОХОД В ГОРЫ</h2>
+            <h2>СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ</h2>
             </a>
-        </div>
-      </div>
+        </div>      
     </div>
-    <div class="post-trend">
-      <div class="image-trend">
-       <img src="images/trend4.jpg" class="foto-trend" alt="лимоны">
+    <div class="post-trend lemons">      
        <div class="box-trend">
         <div class="tegs-trnd">
          <ul>
@@ -93,8 +89,7 @@
           <a href="#0">
             <h2>Сейчас в тренде: СКОЛЬКО ВИТАМИНА В ЛИМОНАХ?</h2>
           </a>
-      </div>
-    </div> 
+      </div>    
     </div>
   </div>
   <div class="content">
@@ -359,6 +354,65 @@
       </section>
     </aside>
   </div>
+  <a href="#0">
+    <h2 class="our-products">Наши изделия</h2>
+  </a>
+  <div class="products">
+    <div class="product">     
+      <div class="foto-product">
+        <img src="images/shop-item-desk1.jpg" alt="Подушки">
+          <div class="content-product">
+            <h2>Подушки на диван</h2>
+            <p>Набор из двух подушек с модными принтами.</p> 
+            <p>Видео о создании <span><a href="#0">здесь</a>.</span></p>
+            <div class="shop">
+              <div class="price">
+                <p class="old_price"><span>1000<span class="money_old_price"></span> р</span></span></p>
+                <p class="current_price"><span>800<span class="money_current_price"></span> р</span></span></p>
+               </div>
+               <div class="box_in_shop">
+                 <button class="in_shop-input">в магазин</button>
+              </div>
+          </div>
+        </div>
+      </div>   
+    </div> 
+    <div class="product">     
+      <div class="foto-product">
+        <img src="images/shop-item-desk2.jpg" alt="зайчик">
+          <div class="content-product">
+            <h2>Кукла «Зайчик»</h2>
+            <p>Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена<span><a href="#0"> весенняя серия постов</a></span> в блоге и несколько подкастов.</p>
+            <div class="shop">
+              <div class="price">
+                <p class="current_price"><span>3500<span class="money_current_price"></span> р</span></span></p>
+               </div>
+               <div class="box_in_shop">
+                 <button class="in_shop-input">в магазин</button>
+              </div>
+          </div>
+        </div>
+      </div>   
+    </div> 
+    <div class="product">     
+      <div class="foto-product">
+        <img src="images/shop-item-desk3.jpg" alt="рамка">
+          <div class="content-product">
+            <h2>Шестиугольная рамка</h2>
+            <p>Необычная рамка для украшения дома из видео<span><a href="#0"> «Как сделать рамку из подручных средств за 30 минут»</a>.</span></p>
+            <div class="shop">
+              <div class="price">
+                <p class="old_price"><span>500<span class="money_old_price"></span> р</span></span></p>
+                <p class="current_price"><span>400<span class="money_current_price"></span> р</span></span></p>
+               </div>
+               <div class="box_in_shop">
+                 <button class="in_shop-input">в магазин</button>
+              </div>
+          </div>
+        </div>
+      </div>   
+    </div> 
+  </div> 
   <footer class="footer">
     <ul class="socials">
       <li class="socials-item">

@@ -1,7 +1,9 @@
+
+
 body {
     font-family: "Open Sans", Arial, sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: weight;
     font-style: normal;
     font-variation-settings: "wdth" 100;
   }
@@ -11,9 +13,10 @@ body {
     padding: 0px;
   }
   
+  @media (min-width: 1200px) {
   .header {
     height: 448px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg")
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner-bg.jpg")
         no-repeat center center;
     background-size: cover;
   }
@@ -65,11 +68,6 @@ body {
     text-transform: uppercase;
   }
   
-
-
-
-
-
   .now-trends {
     font-size: 20px;
     font-weight: bold;
@@ -98,27 +96,36 @@ body {
     display: flex;
     justify-content:center;
     position: relative;
+    gap: 4px;
   }
 
   .post-trend {
     width: 414px;
+    min-height: 320px;
+    display: flex;
+    align-items: flex-end;
     position: relative;
     text-align: center;
     color: white;
-    text-decoration: none;
-    gap: 4px;
-}
-
-
-  
-.image-trend{
-    width: 100%;
-    height: auto;
-    display: block;
-    
+    text-decoration: none;  
   }
 
+ .garden {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/trend1.jpg")
+  no-repeat center center;
+  }
 
+ .cheeses {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/trend2.jpg")no-repeat center center;
+  }
+
+ .hike {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/trend3.jpg")no-repeat center center;
+  }
+
+ .lemons {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/trend4.jpg")no-repeat center center;
+  }
 
   .tegs-trnd {
     list-style: none;
@@ -127,8 +134,10 @@ body {
     flex-direction:row;
     font-weight: bold;
     text-transform: uppercase;
+    padding-left: 30px;
+    padding-top: 30px;
+    margin-bottom: 16px;
   }
-
 
   .tegs-trnd a {
     color: #b59f5b;
@@ -141,28 +150,28 @@ body {
   }
   
   .tegs-trnd li {
-    padding-right: 33px;
+    padding-right: 20px;
     font-size: 14px;
     text-transform: uppercase;
   }
 
+  .post-trend h2 {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0 32px;
+    text-align: left;
+    text-transform: uppercase;
+  }
 
   .box-trend {
     position: relative;
     border: solid 3px;
     color: #8f845d;
+    margin-left: 21px;
+    margin-right: 21px;
+    margin-bottom: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
   }
-
-
-
-
-
-
-
-
-
-
-
 
   .content {
     display: flex;
@@ -177,7 +186,7 @@ body {
     width: 778px;
     display: flex;
     margin-bottom: 59px;
-    margim-left: 15px;
+    margin-left: 15px;
   }
   
   .post:last-child {
@@ -291,7 +300,6 @@ body {
   
   .sidebar_card {
     width: 182px;
-    
     font-size: 14px;
     line-height: 1;
   }
@@ -428,7 +436,117 @@ body {
     margin-left: 5px;
     color: #b59f5b;
   }
-  
+
+  .our-products {
+    font-size: 20px;
+    font-weight: bold;
+    color:#0e0c0d;
+    text-align: center;
+    margin: auto;
+    margin-top: 59px;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+  }
+
+  .our-products::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    margin-top: 33px;
+    width: 66px;
+    height: 3px;
+    background-color: #b59f5b;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .products {
+    display: flex;
+    justify-content: center;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    margin: 0 55px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .foto-product {
+    width: 300px;
+  }
+
+.content-product {
+    outline: 3px solid #b59f5b;
+    outline-offset: 20px;
+    margin-top: -10px;
+    padding-top: 25px;
+    flex-grow: 1;
+  }
+
+.content-product h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.content-product p {
+    font-size: 15px;
+}
+
+.content-product a {
+    color: #b59f5b;
+    font-size: 15px;
+}
+
+.shop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 24px;
+}
+
+.in_shop-input{
+    width: 140px;
+    height: 49px;
+    background-color: #b59f5b;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    text-transform: uppercase;
+}
+
+.in_shop-input:active{
+  transform: scale(0.95);
+}
+
+.old_price span {
+    font-size: 14px;
+    text-decoration: line-through;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.money_old_price span{ 
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+
+.current_price span {
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.money_current_price span {
+    font-weight: bolder;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
   .footer {
     width: 1170px;
     height: 82px;
@@ -472,4 +590,4 @@ body {
   .socials-link-text {
     display: none;
   }
-  
+}  
