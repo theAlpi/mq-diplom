@@ -13,11 +13,10 @@ body {
     padding: 0px;
   }
   
-  @media (min-width: 1200px) {
   .header {
     height: 448px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner-bg.jpg")
-        no-repeat center center;
+    no-repeat center center;
     background-size: cover;
   }
   
@@ -111,8 +110,7 @@ body {
   }
 
  .garden {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/trend1.jpg")
-  no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/trend1.jpg")no-repeat center center;
   }
 
  .cheeses {
@@ -469,8 +467,6 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 55px;
-    display: flex;
-    flex-direction: column;
   }
 
   .foto-product {
@@ -590,4 +586,95 @@ body {
   .socials-link-text {
     display: none;
   }
+
+  @media (min-width: 641px) and (max-width: 1200px){
+    .header {
+      height: 392px;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner-bg-tablet.jpg")
+      no-repeat center center;
+      background-size: cover;
+    }
+    .trends {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:center;
+      position: relative;
+      gap: 4px;
+    }
+    .post-trend {
+      width: 49%;
+      min-height: 247px;
+    }
+    
+ .garden {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/trend1.jpg")no-repeat center center;
+  background-size: cover;
+}
+
+.cheeses {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/trend2.jpg")no-repeat center center;
+  background-size: cover;
+}
+
+.hike {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/trend3.jpg")no-repeat center center;
+  background-size: cover;
+}
+
+.lemons {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/trend4.jpg")no-repeat center center;
+  background-size: cover;
+}
+
+.content {
+  padding: 0 36px;
+}
+
+.posts {
+
+}
+
+.post {
+  max-width: 390px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.post_card {
+  width: 367px;
+  margin-left: 0px;
+}
+
+.post img {
+  width: 381px;
+  height: 294px;
+}
+.container {
+  width: 272px;
+  margin-left: 35px;
+}
+.products {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.footer {
+  width: 100%;
+  margin: auto;
+  margin-top: 90px;
+  margin-bottom: 74px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.product {
+  margin-top: 30px;
 }  
+
+.our-products {
+  margin-bottom: 15px;
+}
+
+
+
+}
