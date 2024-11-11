@@ -683,9 +683,10 @@ body {
 }
 }
 
-@media (max-width: 640px){
+ @media (max-width: 640px) {
 .header {
-  height: auto;
+  width: 100%;
+  height: 1135px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner-mobile.jpg") no-repeat center center;
   background-size: cover;
 }
@@ -693,18 +694,82 @@ body {
 .trends {
   width: 100%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   position: relative;
   gap: 4px;
+}
+.post-trend {
+  width: 100%;
+  max-height: 232px;
+  position: relative;
+}
+
+.box-trend {
+ width: 100%;
+}
+
+
+
+.garden {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/trend1.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.cheeses {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/trend2.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.hike {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/trend3.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.lemons {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/trend4.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.posts {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.post {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0px;
 }
 
 .content {
   display: flex;
   justify-content: center;
-  max-width: 1170px;
-  margin: auto;
-  margin-top: 65px;
+  flex-direction: column;
+  margin: 0;
+  margin-top: 43px;
   padding: 0px 15px;
 }
+.container {
+  width: auto;
+  margin-left: 0px;
+}
+.products {
+  flex-direction: column;
+
+}
+.footer {
+  width: 100%;
+  margin: auto;
+  margin-top: 90px;
+  margin-bottom: 74px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 
 }
