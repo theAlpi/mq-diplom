@@ -684,6 +684,38 @@ body {
 }
 
  @media (max-width: 640px) {
+
+.wrap {
+  height: 100%;
+}
+
+.nav {
+   visibility: hidden;
+}
+  
+.logo img {
+  position: absolute;
+  left: 12.5%;
+  top: 19.5%;
+  width: 75%;
+  height: auto;
+}
+
+.tagline {
+  position: absolute;
+  width: 75%;
+  margin: 0px;
+  left: 12.5%;
+  top: 30%;
+  width: 75%;
+
+}
+
+h1 {
+  font-size: 26px;
+}
+
+
 .header {
   width: 100%;
   height: 1135px;
@@ -709,8 +741,6 @@ body {
  width: 100%;
 }
 
-
-
 .garden {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/trend1.jpg") no-repeat center center;
   background-size: cover;
@@ -732,6 +762,7 @@ body {
 }
 
 .posts {
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -740,9 +771,19 @@ body {
 .post {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  justify-content: center;
   margin: 0px;
+}
+
+.post img {
+  width: 100%;
+  height: 100%
+}
+
+.post_card {
+  width: 100%;
+  margin-left: 0px;
 }
 
 .content {
@@ -754,9 +795,40 @@ body {
   padding: 0px 15px;
 }
 .container {
-  width: auto;
+  width: 100%;
   margin-left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.section-sidebar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.sidebar_card {
+  width: 100%;
+}
+  
+.sidebar {
+  width: 100%;
+}
+
+.sidebar img {
+  
+  width: 70px;
+  height: 70px;
+}
+
+.search-input {
+  width: 100%;
+
+}
+
 .products {
   flex-direction: column;
 
