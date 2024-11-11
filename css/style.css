@@ -587,7 +587,7 @@ body {
     display: none;
   }
 
-  @media (min-width: 641px) and (max-width: 1200px){
+  @media (min-width: 641px) and (max-width: 1200px) {
     .header {
       height: 392px;
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner-bg-tablet.jpg")
@@ -608,46 +608,47 @@ body {
     }
     
  .garden {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/trend1.jpg")no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/trend1.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .cheeses {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/trend2.jpg")no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/trend2.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .hike {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/trend3.jpg")no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/trend3.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .lemons {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/trend4.jpg")no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/trend4.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .content {
   padding: 0 36px;
-}
-
-.posts {
-
+  max-width: 100%;
+  margin: 0;
+  margin-top: 50px;
 }
 
 .post {
-  max-width: 390px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 .post_card {
-  width: 367px;
+  width: 381px;
   margin-left: 0px;
 }
 
 .post img {
   width: 381px;
-  height: 294px;
+  background-size: cover;
+  
 }
 .container {
   width: 272px;
@@ -655,7 +656,20 @@ body {
 }
 .products {
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
+
+}
+
+.product {
+  margin-top: 30px;
+}  
+
+.our-products {
+  margin-bottom: 15px;
+}
+
+.foto-product {
+  max-width: 292px;
 }
 
 .footer {
@@ -667,14 +681,30 @@ body {
   justify-content: center;
   text-align: center;
 }
-.product {
-  margin-top: 30px;
-}  
-
-.our-products {
-  margin-bottom: 15px;
 }
 
+@media (max-width: 640px){
+.header {
+  height: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner-mobile.jpg") no-repeat center center;
+  background-size: cover;
+}
 
+.trends {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 4px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  max-width: 1170px;
+  margin: auto;
+  margin-top: 65px;
+  padding: 0px 15px;
+}
 
 }
