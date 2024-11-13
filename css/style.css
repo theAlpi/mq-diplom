@@ -596,6 +596,38 @@ body {
       no-repeat center center;
       background-size: cover;
     }
+
+    .wrp {
+      display: flex;
+    }
+
+    .nav {
+      visibility: hidden;
+   }
+
+    #menu {
+      display: flex;
+    } 
+    
+    .burger_menu {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      align-items: flex-end;
+      padding-right: 35px;
+      margin-top: -36px;
+      
+    }
+    
+    .burger_menu span {
+      background-color: #ffffff;
+      height: 4px;
+      width: 54px;
+      margin: 4px;
+      transition: all 0.3s;
+    }
+
+
     .trends {
       width: 100%;
       display: flex;
@@ -874,16 +906,21 @@ input[type="email"] {
 
 #menu {
   display: flex;
+} 
 
 .burger_menu {
+  display: flex;
   flex-direction: column;
   cursor: pointer;
+  align-items: flex-end;
+  padding-right: 16px;
+  padding-top: 31px;
 }
 
 .burger_menu span {
-  background-color: white;
+  background-color: #ffffff;
   height: 3px;
-  width: 25px;
+  width: 23px;
   margin: 4px;
   transition: all 0.3s;
 }
