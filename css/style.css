@@ -429,7 +429,9 @@ body {
     display: flex;
     align-items: center;
   }
-  
+  .topics li:hover {
+    color:#b59f5b;
+  }
   .topics span {
     margin-left: 5px;
     color: #b59f5b;
