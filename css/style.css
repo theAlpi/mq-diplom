@@ -140,9 +140,9 @@ body {
     flex-direction:row;
     font-weight: bold;
     text-transform: uppercase;
-    padding-left: 30px;
+    padding-left: 32px;
     padding-top: 30px;
-    margin-bottom: 16px;
+    margin-bottom: 5px;
   }
 
   .tegs-trnd a {
@@ -187,6 +187,10 @@ body {
 
   .trnd_heads:hover {
     color: #b59f5b;
+  }
+
+  .trnd_heads {
+    padding-bottom: 30px;
   }
 
   .content {
@@ -514,10 +518,10 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 55px;
+    width: 300px;
   }
 
   .foto-product {
-    width: 300px;
     display: flex;
     flex-direction: column;
   }
@@ -528,6 +532,7 @@ body {
     margin-top: -10px;
     padding-top: 25px;
     flex-grow: 1;
+
   }
 
 .content-product h2{
