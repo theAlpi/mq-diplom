@@ -21,15 +21,23 @@ body {
   }
   
   .wrap {
+    display: flex;
+    justify-content: space-between;
     max-width: 1200px;
     margin: auto;
   }
   
   .nav {
     display: flex;
+    align-items: center;
     justify-content: flex-end;
   }
   
+  .nav_link:hover {
+    text-decoration: underline;
+    color: #ffffff;
+  }
+
   .nav a {
     color: #ffffff;
     text-decoration: none;
@@ -141,9 +149,15 @@ body {
     color: #b59f5b;
     text-decoration: none;
   }
+
+  .tegs-trnd a:hover {
+    text-decoration: underline;
+    text-decoration-color: #b59f5b;
+  }
   
   .tegs-trnd ul {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
   }
   
@@ -169,6 +183,10 @@ body {
     margin-right: 21px;
     margin-bottom: 15px;
     background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .trnd_heads:hover {
+    color: #b59f5b;
   }
 
   .content {
@@ -222,6 +240,7 @@ body {
   
   .tags ul {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
   }
   
@@ -306,6 +325,7 @@ body {
     font-size: 14px;
     font-weight: bold;
     color: black;
+    text-transform: uppercase;
   }
   
   .newsletter {
@@ -322,8 +342,14 @@ body {
     background-color: #f3f7f5;
     font-size: 13px;
     border: none;
+    outline: none;
   }
-  
+
+  .search-input:focus {
+    border: 1px solid #b59f5b;
+    box-sizing: border-box;
+  }
+
   .search-button {
     width: 48px;
     height: 48px;
@@ -331,7 +357,11 @@ body {
     border: none;
     padding: 15px;
   }
-  
+ 
+  .search-button:hover {
+    background-color: #323232;
+  }
+
   .search-button:active {
     transform: scale(0.95);
   }
@@ -351,6 +381,13 @@ body {
     margin-bottom: 14px;
     font-size: 13px;
     padding-left: 19px;
+    border: none;
+    outline: none;
+  }
+
+  input[type="email"]:focus {
+    border: 1px solid #b59f5b;
+    box-sizing: border-box;
   }
   
   .subscribe-input {
@@ -363,6 +400,10 @@ body {
     border: none;
   }
   
+  .subscribe-input:hover {
+    background-color: #323232;
+  }
+
   .subscribe-input:active {
     transform: scale(0.95);
   }
@@ -420,6 +461,10 @@ body {
     flex-direction: column;
   }
   
+  .topics_category:hover{
+    color: #b59f5b;
+  }
+
   .topics li {
     width: 287px;
     height: 47px;
@@ -489,6 +534,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 7px;
+    text-transform: uppercase;
 }
 
 .content-product p {
