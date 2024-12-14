@@ -573,6 +573,10 @@ body {
   transform: scale(0.95);
 }
 
+.in_shop-input:hover {
+  background-color: #323232;
+}
+
 .old_price span {
     font-size: 14px;
     text-decoration: line-through;
@@ -657,7 +661,7 @@ body {
     .nav {
       visibility: hidden;
    }
-
+   
     #menu {
       display: flex;
     } 
@@ -674,6 +678,7 @@ body {
     
     .burger_menu span {
       background-color: #ffffff;
+
       height: 4px;
       width: 54px;
       margin: 4px;
@@ -780,6 +785,28 @@ body {
    visibility: hidden;
 }
   
+#menu {
+  display: flex;
+} 
+
+.burger_menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: flex-end;
+  align-items:flex-start;
+  padding-right: 16px;
+  padding-top: 31px;
+}
+
+.burger_menu span {
+  background-color: #ffffff;
+  height: 3px;
+  width: 23px;
+  margin: 4px;
+  transition: all 0.3s;
+}
+
 .logo img {
   position: absolute;
   left: 12.5%;
@@ -957,36 +984,6 @@ input[type="email"] {
   justify-content: center;
 }
 
-#menu {
-  display: flex;
-} 
-
-.burger_menu {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  align-items: flex-end;
-  padding-right: 16px;
-  padding-top: 31px;
-}
-
-.burger_menu span {
-  background-color: #ffffff;
-  height: 3px;
-  width: 23px;
-  margin: 4px;
-  transition: all 0.3s;
-}
-
-
-
-
-
-
-
-
-
-
 
 
 .footer {
@@ -997,5 +994,5 @@ input[type="email"] {
   display: flex;
   justify-content: center;
   text-align: center;
-}
+ }
 }
