@@ -230,6 +230,10 @@ body {
     margin-bottom: 36px;
     text-transform: uppercase;
   }
+
+  .card_header:hover {
+    color: #b59f5b;
+  }
   
   .tags {
     display: flex;
@@ -242,6 +246,12 @@ body {
     color: #b59f5b;
   }
   
+  .card_tags:hover{
+    text-decoration: underline;
+    text-decoration-color: #b59f5b;
+  }
+
+
   .tags ul {
     display: flex;
     flex-wrap: wrap;
@@ -530,7 +540,11 @@ body {
     margin-top: -10px;
     padding-top: 25px;
     flex-grow: 1;
+  }
 
+  .product_text:hover {
+    text-decoration: underline;
+    text-decoration-color: #b59f5b;
   }
 
 .content-product h2{
@@ -644,6 +658,17 @@ body {
     display: none;
   }
 
+  .copyright {
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+   margin-bottom: 50px;
+  }
+
+  .text_copyright {
+   color: #999999;
+  }
+
   @media (min-width: 641px) and (max-width: 1200px) {
     .header {
       height: 392px;
@@ -655,34 +680,40 @@ body {
     .wrp {
       display: flex;
     }
-
+    
+    .logo img {
+      width: 180px;
+      height: 40px;
+      padding-left: 36px;
+      padding-top: 42px;
+    }
     .nav {
       visibility: hidden;
    }
    
-    #menu {
-      display: flex;
-    } 
-    
-    .burger_menu {
-      display: flex;
-      flex-direction: column;
-      cursor: pointer;
-      align-items: flex-end;
-      padding-right: 35px;
-      margin-top: -36px;
-      
-    }
-    
-    .burger_menu span {
-      background-color: #ffffff;
-
-      height: 4px;
-      width: 54px;
-      margin: 4px;
-      transition: all 0.3s;
-    }
-
+   #menu {
+    display: flex;
+  } 
+  
+  .burger_menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: flex-end;
+    align-items:flex-start;
+    left: 93%;
+    top: 42px;
+  }
+  
+  .burger_menu span {
+    background-color: #ffffff;
+    height: 3px;
+    width: 23px;
+    margin: 4px;
+    transition: all 0.3s;
+  }
+  
 
     .trends {
       width: 100%;
@@ -788,13 +819,14 @@ body {
 } 
 
 .burger_menu {
+  position: absolute;
   display: flex;
   flex-direction: column;
   cursor: pointer;
   justify-content: flex-end;
   align-items:flex-start;
-  padding-right: 16px;
-  padding-top: 31px;
+  left: 90%;
+  top: 30px;
 }
 
 .burger_menu span {
